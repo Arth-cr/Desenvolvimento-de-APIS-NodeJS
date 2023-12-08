@@ -12,12 +12,16 @@ async function main() {
     }
     console.timeEnd('for')
 
+    /////////////////////////////////////
+
     console.time('forin')
     for (let i in result.results) {
       const pessoa = result.results[i]
       names.push(pessoa.name)
     }
     console.timeEnd('forin')
+
+    /////////////////////////////////////
 
     console.time('forof')
     for (pessoa of result.results) {
