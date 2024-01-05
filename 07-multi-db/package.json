@@ -1,0 +1,12 @@
+{
+  "name": "07-multi-db",
+  "version": "1.0.0",
+  "description": "Rode esses comandos no GitBash/cms/PowerShell ou terminal de sua preferência.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
