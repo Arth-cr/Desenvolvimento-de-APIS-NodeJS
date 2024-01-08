@@ -53,6 +53,14 @@ class Postgres extends ICrud {
   read(item = {}) {
     return this._herois.findAll({ where: item, raw: true })
   }
+  async update(id, item) {
+    return this._herois.update(item, { where: { id: id } })
+  }
+  async delete(id) {
+    const query = id ? { id } : {}
+
+    return this._herois.destroy({ where: query })
+  }
   async connect() {
     this._driver = new Sequelize('heros', 'arthcr', `${process.env.SENHA_DB}`, {
       host: 'localhost',
