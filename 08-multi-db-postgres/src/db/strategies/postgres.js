@@ -1,5 +1,6 @@
 const ICrud = require('./interfaces/interfaceCrud')
 const Sequelize = require('sequelize')
+require('dotenv/config')
 
 class Postgres extends ICrud {
   constructor() {
@@ -49,8 +50,11 @@ class Postgres extends ICrud {
 
     return dataValues
   }
+  read(item = {}) {
+    return this._herois.findAll({ where: item, raw: true })
+  }
   async connect() {
-    this._driver = new Sequelize('heros', 'arthcr', SENHA_DB, {
+    this._driver = new Sequelize('heros', 'arthcr', `${process.env.SENHA_DB}`, {
       host: 'localhost',
       dialect: 'postgres',
       quoteIdentifiers: false,
