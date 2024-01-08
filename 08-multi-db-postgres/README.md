@@ -7,7 +7,7 @@ Rode esses comandos no GitBash/cms/PowerShell ou terminal de sua preferência.
 Para um passo-a-passo mais detalhado acesse: [Postgres](https://hub.docker.com/_/postgres).
 
 ```bash
-docker run --name postgres -e POSTGRES_USER=arthcr -e POSTGRES_PASSWORD=04341528 -e POSTGRES_DB=nomeDataBase -p 5432:5432 -d postgres
+docker run --name postgres -e POSTGRES_USER=arthcr -e POSTGRES_PASSWORD=SENHA_DB -e POSTGRES_DB=nomeDataBase -p 5432:5432 -d postgres
 ```
 
 Verifique se foi instalado corretamente com o comando:

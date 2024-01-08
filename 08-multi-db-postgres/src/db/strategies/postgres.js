@@ -50,7 +50,7 @@ class Postgres extends ICrud {
     return dataValues
   }
   async connect() {
-    this._driver = new Sequelize('heros', 'arthcr', '04341528', {
+    this._driver = new Sequelize('heros', 'arthcr', SENHA_DB, {
       host: 'localhost',
       dialect: 'postgres',
       quoteIdentifiers: false,

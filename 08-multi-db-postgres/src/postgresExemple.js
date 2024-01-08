@@ -1,7 +1,7 @@
 // npm install sequelize
 // npm install pg-hstore pg
 const Sequelize = require('sequelize')
-const driver = new Sequelize('heros', 'arthcr', '04341528', {
+const driver = new Sequelize('heros', 'arthcr', 'SENHA_DB', {
   host: 'localhost',
   dialect: 'postgres',
   quoteIdentifiers: false,
